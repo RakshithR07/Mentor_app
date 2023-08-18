@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/img_1">
+
+        <!-- Add your layout components here -->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="143dp">
+
+                <!-- Add components for the first RelativeLayout here -->
+
+
+                <TextView
+                    android:id="@+id/head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="53dp"
+                    android:layout_marginTop="37dp"
+                    android:layout_marginEnd="38dp"
+                    android:text="ADD STUDENT"
+                    android:textAlignment="center"
+                    android:textColor="#ECD409"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="81dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_toStartOf="@+id/usn"
+                    android:background="@color/editback"
+                    android:text="USN:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/usn"
+                    app:layout_constraintHorizontal_bias="0.048"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+
+                <EditText
+                    android:id="@+id/usn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="14dp"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:hint="Enter your USN"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="69dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="38dp"
+                    android:layout_toStartOf="@+id/name"
+                    android:background="@color/editback"
+                    android:text="NAME:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/name"
+                    app:layout_constraintHorizontal_bias="0.138"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="14dp"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:hint="Enter your name"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="118dp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="75dp"
+                    android:layout_height="82dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="31dp"
+                    android:layout_toStartOf="@+id/sec"
+                    android:background="@color/editback"
+                    android:text="CLASS AND SEC:"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/sec"
+                    app:layout_constraintHorizontal_bias="0.257"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+
+                <EditText
+                    android:id="@+id/sec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="37dp"
+                    android:layout_marginEnd="14dp"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:hint="Enter your Class and Sec"
+                    android:inputType="text"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_toStartOf="@+id/phone"
+                    android:background="@color/editback"
+                    android:text="MOB NO.:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/phone"
+                    app:layout_constraintHorizontal_bias="0.263"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="14dp"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:hint="Enter valid mobile no."
+                    android:inputType="phone"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.491" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="276dp">
+
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="166dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginEnd="187dp"
+                    android:background="@color/editback"
+                    android:text="IA1"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/s1"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView6"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_toStartOf="@+id/m1"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="SUB1"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/m1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView6"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:hint="Enter marks here"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/s2"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s1"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_toStartOf="@+id/m2"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="SUB2"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/m2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/m1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:hint="Enter marks here"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/s3"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s2"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_toStartOf="@+id/m3"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="SUB3"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/m3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/m2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:hint="Enter marks here"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/s4"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s3"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_toStartOf="@+id/m4"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="SUB4"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/m4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/m3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:hint="Enter marks here"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/s5"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s4"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_toStartOf="@+id/m5"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="SUB5"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/m5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/m4"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:hint="Enter marks here"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/s6"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s5"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_toStartOf="@+id/m6"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="SUB6"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/m6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/m5"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:hint="Enter marks here"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="276dp">
+
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="166dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginEnd="187dp"
+                    android:background="@color/editback"
+                    android:text="IA2"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/s11"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView7"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_toStartOf="@+id/m11"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="SUB1"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/m11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView7"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:hint="Enter marks here"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/s21"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s11"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_toStartOf="@+id/m21"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="SUB2"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/m21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/m11"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:hint="Enter marks here"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/s31"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s21"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_toStartOf="@+id/m31"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="SUB3"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/m31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/m21"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:hint="Enter marks here"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/s41"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s31"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_toStartOf="@+id/m41"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="SUB4"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/m41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/m31"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:hint="Enter marks here"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/s51"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s41"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_toStartOf="@+id/m51"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="SUB5"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/m51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/m41"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:hint="Enter marks here"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/s61"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s51"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_toStartOf="@+id/m61"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="SUB6"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/m61"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/m51"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:hint="Enter marks here"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+<!--            // ia3-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="276dp">
+
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="166dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginEnd="187dp"
+                    android:background="@color/editback"
+                    android:text="IA3"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/s12"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView8"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_toStartOf="@+id/m12"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="SUB1"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/m12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView8"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:hint="Enter marks here"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/s22"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s12"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_toStartOf="@+id/m22"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="SUB2"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/m22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/m12"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:hint="Enter marks here"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/s32"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s22"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_toStartOf="@+id/m32"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="SUB3"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/m32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/m22"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:hint="Enter marks here"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/s42"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s32"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_toStartOf="@+id/m42"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="SUB4"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/m42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/m32"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:hint="Enter marks here"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/s52"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s42"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_toStartOf="@+id/m52"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="SUB5"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/m52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/m42"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:hint="Enter marks here"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/s62"
+                    android:layout_width="63dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/s52"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_toStartOf="@+id/m62"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="SUB6"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/m62"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/m52"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/edittext_name"
+                    android:ems="10"
+                    android:hint="Enter marks here"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="118dp">
+
+
+                <Button
+                    android:id="@+id/sub"
+                    android:layout_width="138dp"
+                    android:layout_height="58dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="43dp"
+                    android:backgroundTint="#FFEB3B"
+                    android:text="SUBMIT"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.479"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.465" />
+
+                <Button
+                    android:id="@+id/send"
+                    android:layout_width="138dp"
+                    android:layout_height="58dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="39dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_toStartOf="@+id/sub"
+                    android:backgroundTint="#FFEB3B"
+                    android:text="SEND MSG"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.479"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.465" />
+
+            </RelativeLayout>
+
+            <!--            <ScrollView-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent" >-->
+
+
+            <!--            </ScrollView>-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+    </LinearLayout>
+
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
